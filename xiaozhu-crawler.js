@@ -13,7 +13,7 @@ class Crawler {
     async start () {
         console.log(`start`);
         this._browser = await puppeteer.launch({
-            executablePath: 'C:\\Users\\S\\Desktop\\chrome-win32\\chrome.exe', // chromium安装路径
+            // executablePath: 'C:\\Users\\S\\Desktop\\chrome-win32\\chrome.exe', // chromium安装路径
             headless: false, // 是否隐藏浏览器
         });
         clearInterval(this._listTimer);
